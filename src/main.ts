@@ -1,0 +1,12 @@
+import { createApp } from 'vue';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+import { IonicVue } from '@ionic/vue';
+import '@ionic/vue/css/core.css';
+import '@ionic/vue/css/normalize.css';
+import '@ionic/vue/css/structure.css';
+import '@ionic/vue/css/typography.css';
+import './style.css';
+import App from './App.vue';
+
+createApp(App).use(IonicVue, { mode: 'md' }).use(VueAxios, axios).mount('#app');
